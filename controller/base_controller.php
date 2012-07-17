@@ -27,7 +27,7 @@ if(is_dir(SITE_PATH . "views/" . $uri[1])){
 }else{
 	
 	include(SITE_PATH . 'views/index_view.php');
-	
+	//sdfsdf
 }
 
  
