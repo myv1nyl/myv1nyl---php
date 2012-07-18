@@ -14,25 +14,25 @@
  
  //Set PATH constant
  $path = realpath($_SERVER["DOCUMENT_ROOT"]);
- define('SITE_PATH',$path."/projects/myv1nyl/");
+ define('SITE_PATH',$path."/");
  
   //Define Template
  define('TEMPLATE_NAME','main');
- define('TEMPLATE',"tmpl/".TEMPLATE_NAME);
+ define('TEMPLATE',"/tmpl/".TEMPLATE_NAME);
 
  //include ini.php (sets up vital functionality)
- include(SITE_PATH . "config/ini.php");
+ include(SITE_PATH . "../config/ini.php");
  
   //include ajax controller - redirects ajax calls to correct functions
- include(SITE_PATH . "controller/ajax_controller.php");
+ include(SITE_PATH . "../controller/ajax_controller.php");
  
  // Include Header
- include(SITE_PATH . "inc/header.php");
+ include(SITE_PATH . "../inc/header.php");
   
  //include base controller
- include(SITE_PATH . "controller/base_controller.php");
+ include(SITE_PATH . "../controller/base_controller.php");
   
  // Include Footer
- include(SITE_PATH  . "inc/footer.php");
+ include(SITE_PATH  . "../inc/footer.php");
  
 ?>

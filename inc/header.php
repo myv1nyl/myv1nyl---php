@@ -11,6 +11,7 @@
 		<!-- Styles | Will be incoprporated into the framework -->
 		<link href="<?php echo TEMPLATE ?>/css/stylesheet.css" type="text/css" rel="stylesheet" />
 		<link href="<?php echo TEMPLATE ?>/css/reset.css" type="text/css" rel="stylesheet" />
+		<link rel="icon" type="image/png" href="<?php echo TEMPLATE ?>/assets/images/icons/favicon.ico" />
 		
 		<!-- JavaScript Includes -->
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>

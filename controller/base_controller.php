@@ -12,24 +12,23 @@ $uri = $_SERVER['REQUEST_URI'];
 $uri = explode('/' , $uri);
 print_r($uri);
 
-if(is_dir(SITE_PATH . "views/" . $uri[1])){
+if(is_dir(SITE_PATH . "../views/" . $uri[0])){
 	
-	if(is_file(SITE_PATH . "views/" . $uri[1] . "/" . $uri[2] . "_view.php")){
+	if(is_file(SITE_PATH . "../views/" . $uri[0] . "/" . $uri[1] . "_view.php")){
 		
-		include(SITE_PATH . "views/" . $uri[1] . "/" . $uri[2] . "_view.php");
+		include(SITE_PATH . "../views/" . $uri[0] . "/" . $uri[1] . "_view.php");
 		
-	}else if(is_dir(SITE_PATH . "views/" . $uri[1])){
+	}else if(is_dir(SITE_PATH . "../views/" . $uri[0])){
 		
-		include(SITE_PATH . "views/" . $uri[1] . "/index_view.php");
+		include(SITE_PATH . "../views/" . $uri[0] . "/index_view.php");
 		
 	}
 	
 }else{
 	
-	include(SITE_PATH . 'views/index_view.php');
-	//sdfsdf
+	include(SITE_PATH . '../views/index_view.php');
+
 }
 
- 
 
 ?>
